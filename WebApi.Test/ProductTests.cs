@@ -84,7 +84,7 @@ namespace WebApi.Test
             var createdProduct = await response.Content.ReadFromJsonAsync<Product>();
 
             Assert.That(createdProduct != null);
-            Assert.That(newProduct.Name+"a", Is.EqualTo(createdProduct?.Name));
+            Assert.That(newProduct.Name, Is.EqualTo(createdProduct?.Name));
 
         }
 
